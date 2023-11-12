@@ -130,6 +130,7 @@ wrap {
 .menu-container {
     max-height: 340px;
     margin: 0% auto; /*center alignment */
+    text-align: center;
     content: " ";
     /* top: 0;
     left: 0; */
@@ -285,8 +286,6 @@ wrap {
 
 .terms {
     margin: 23px 41px 0 0;
-    margin-top: 13%;
-    padding-left: 52px;
     font-size: 14px;
     line-height: 5px;
     color: #000;
