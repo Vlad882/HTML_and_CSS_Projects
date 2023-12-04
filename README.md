@@ -6,7 +6,7 @@ This is a display of sample websites that I made during my Pitman training!
 ## PROJECTS
 * [Space Station Site](https://github.com/Vlad882/HTML_and_CSS_Projects/tree/main/Project) 
 * [Movie Theatre Site](https://github.com/Vlad882/HTML_and_CSS_Projects/tree/main/Bootstrap4_project)
-* [My Portfolio Site](https://github.com/Vlad882/Vlad882.github.io)
+* [My Portfolio Site](https://vlad882.github.io/)
 
 
 ## Space Station Site
