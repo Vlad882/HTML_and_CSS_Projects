@@ -43,56 +43,77 @@
 				<h1>Gallery</h1>
 				<div>
 				
-					<!-- PHOTO CONTAINER 1 -->
-					<div>
-						<div>
-							<img src="./images/thumb/thumbnail_1.jpg" alt="Glen Coe">
-							<div>
-								<h3>Click to Enlarge</h3>
-								<p>Book your tour to Glen Coe!</p>
-							</div>
-						</div>
-					</div>
-					<!-- END PHOTO - CONTAINER 1 -->
-					
-					<!-- PHOTO CONTAINER 2 -->
-					<div>
-						<div>
-							<img src="./images/thumb/thumbnail_2.jpg" alt="Edinburgh">
-							<div>
-								<h3>Click to Enlarge</h3>
-								<p>Book your tour to Edinburgh!</p>
-							</div>
-						</div>
-					</div>
-					<!-- END PHOTO - CONTAINER 2 -->
-					
-					<!-- PHOTO CONTAINER 3 -->
-					<div>
-						<div>
-							<img src="./images/thumb/thumbnail_3.jpg" alt="Glenfinnan">
-							<div>
-								<h3>Click to Enlarge</h3>
-								<p>Book your tour to Glenfinnan, Mallaig !</p>
-							</div>
-						</div>
-					</div>
-					<!-- END PHOTO - CONTAINER 3 -->
-					
-					<!-- PHOTO CONTAINER 4 -->
-					<div>
-						<div>
-							<img src="./images/thumb/thumbnail_4.jpg" alt="Isle of Sky">
-							<div>
-								<h3>Click to Enlarge</h3>
-								<p>Book your tour to Isle of Sky!</p>
-							</div>
-						</div>
-					</div>
-					<!-- END PHOTO - CONTAINER 4 -->
-		
-				</div>
-			</div>
+<!-- Images used to open the lightbox -->
+<div class="row">
+	<div class="column">
+	  <img src="./images/thumb/thumbnail_1s.jpg" alt="Glen Coe" onclick="openModal();currentSlide(1)" class="hover-shadow">
+	</div>
+	<div class="column">
+	  <img src="./images/thumb/thumbnail_2s.jpg" alt="Edinburgh" onclick="openModal();currentSlide(2)" class="hover-shadow">
+	</div>
+	<div class="column">
+	  <img src="./images/thumb/thumbnail_3s.jpg" alt="Glenfinnan" onclick="openModal();currentSlide(3)" class="hover-shadow">
+	</div>
+	<div class="column">
+	  <img src="./images/thumb/thumbnail_4s.jpg" alt="Isle of Sky" onclick="openModal();currentSlide(4)" class="hover-shadow">
+	</div>
+  </div>
+  
+  <!-- The Modal/Lightbox -->
+  <div id="myModal" class="modal">
+	<span class="close cursor" onclick="closeModal()">&times;</span>
+	<div class="modal-content">
+  
+	  <div class="mySlides">
+		<div class="numbertext">1 / 4</div>
+		<img src="./images/thumb/thumbnail_1.jpg" alt="Glen Coe" style="width:100%">
+	  </div>
+  
+	  <div class="mySlides">
+		<div class="numbertext">2 / 4</div>
+		<img src="./images/thumb/thumbnail_2.jpg" alt="Edinburgh" style="width:100%">
+	  </div>
+  
+	  <div class="mySlides">
+		<div class="numbertext">3 / 4</div>
+		<img src="./images/thumb/thumbnail_3.jpg" alt="Glenfinnan" style="width:100%">
+	  </div>
+  
+	  <div class="mySlides">
+		<div class="numbertext">4 / 4</div>
+		<img src="./images/thumb/thumbnail_4.jpg" alt="Isle of Sky" style="width:100%">
+	  </div>
+  
+	  <!-- Next/previous controls -->
+	  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+	  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  
+	  <!-- Caption text -->
+	  <div class="caption-container">
+		<p id="caption"></p>
+	  </div>
+  
+	  <!-- Thumbnail image controls -->
+	  <div class="column">
+		<img class="demo" src="./images/thumb/Thumbnail_1s.jpg" onclick="currentSlide(1)" alt="Glen Coe">
+	  </div>
+  
+	  <div class="column">
+		<img class="demo" src="./images/thumb/Thumbnail_2s.jpg" onclick="currentSlide(2)" alt="Edinburgh">
+	  </div>
+  
+	  <div class="column">
+		<img class="demo" src="./images/thumb/Thumbnail_3s.jpg" onclick="currentSlide(3)" alt="Glenfinnan">
+	  </div>
+  
+	  <div class="column">
+		<img class="demo" src="./images/thumb/Thumbnail_4s.jpg" onclick="currentSlide(4)" alt="Isle of Sky">
+	  </div>
+	</div>
+  </div>
+
+
+
 		</section>
 		<!-- END GALLERY -->
 		
@@ -132,5 +153,8 @@
 			 &copy; by Vlad 2023
 		</div>
 		<!-- END FOOTER -->
+	
+	<script src="JS/one_page_website.js"></script>
+
 	</body>
 </html>
